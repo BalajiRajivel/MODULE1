@@ -1,52 +1,41 @@
-## Ex.No: 1  
-## Ex.name: Write a C++ Program to display the following pattern using inline function.  
+# Ex.No:1
+# Ex.Name:Write a C++ Program to read two sequence of character  value from the keyboard and display the value on the monitor?
+## Date: 01-09-2025
+## Aim:
+To write a C++ program that reads two sequences of character values (strings) from the keyboard and displays them on the monitor.
 
-**Date:**  
+## Algorithm:
+1.Start the program.
 
-### Aim:  
-To write a program that displays a right-angled triangle star pattern using an inline function.
+2.Declare two string variables to store the character sequences.
 
-### Algorithm:  
-1. Start the program.  
-2. Initialize `n` as the number of rows.  
-3. Define an inline function to print the pattern.  
-4. Use nested loops:  
-   - Outer loop controls the number of rows.  
-   - Inner loop prints stars decreasing each row.  
-5. End the program.  
+3.Read input from the user for both strings using cin.
 
-### Program:
-```cpp
+4.Display the values of the two strings using cout.
+
+5.Stop the program.
+## Program:
+```
 #include <iostream>
 using namespace std;
-
-inline void pattern(int n) {
-    for (int i = n; i >= 1; i--) {
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-        cout << endl;
-    }
-}
-
-int main() {
-    int n;
-    cin >> n;
-    pattern(n);
-    return 0;
+int main(){
+    string first,second;
+    cin >> first >> second;
+    
+    cout << "First Value is:" << first << endl;
+    cout << "Second Value is:" << second << endl;
 }
 ```
 
-### Output:
 
-<img width="1167" height="330" alt="image" src="https://github.com/user-attachments/assets/a25b109e-b495-406b-a260-9376fd222d03" />
 
-### Result:
-```cpp
-Input: 4
-****
-***
-**
-*
 
-```
+
+
+## Output:
+<img width="1189" height="460" alt="Screenshot 2025-09-01 091917" src="https://github.com/user-attachments/assets/ae862f9c-4c87-4b61-9f3b-e356982d19a2" />
+
+
+
+## Result:
+Thus the Program to read two sequence of character  value from the keyboard and display the value on the monitor has been executed successfully
